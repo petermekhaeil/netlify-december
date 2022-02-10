@@ -25,3 +25,12 @@ netlify deploy --prod
 # Run a local development of the site
 netlify dev
 ```
+
+## Using "netlify open" to jump directly to your project's admin page
+
+[Blog Post](https://www.netlify.com/blog/2021/12/06/using-netlify-open-to-jump-directly-to-your-projects-admin-page/)
+
+```bash
+# Directly open Netlify Admin for this application
+netlify open
+```
