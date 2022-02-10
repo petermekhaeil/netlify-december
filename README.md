@@ -2,6 +2,8 @@
 
 Showcase the features of [Netlify](https://www.netlify.com/) that were [highlighted each day in December](https://www.netlify.com/blog/2021/12/01/highlighting-a-different-netlify-feature-each-day-in-december/).
 
+Demo: [https://netlify-december.netlify.app](https://netlify-december.netlify.app)
+
 ## Publish your site assets with the Netlify CLI
 
 [Blog Post](https://www.netlify.com/blog/2021/12/01/publish-your-site-assets-with-the-netlify-cli/)
