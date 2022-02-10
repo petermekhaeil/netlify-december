@@ -16,3 +16,12 @@ netlify deploy
 # Deploy to production
 netlify deploy --prod
 ```
+
+## Supercharge your local development with Netlify Dev
+
+[Blog Post](https://www.netlify.com/blog/2021/12/02/supercharge-your-local-development-with-netlify-dev/)
+
+```bash
+# Run a local development of the site
+netlify dev
+```
