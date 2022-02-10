@@ -1,5 +1,6 @@
 <main>
   <h1>Welcome to Netlify!</h1>
+  <img src="/.netlify/functions/pokemon" alt="Pokemon" />
 </main>
 
 <style>
@@ -45,5 +46,10 @@
     line-height: 1.4;
     margin-top: 1.5em;
     color: var(--secondary-text-color);
+  }
+
+  img {
+    width: 100%;
+    max-width: fit-content;
   }
 </style>

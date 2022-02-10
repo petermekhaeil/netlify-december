@@ -34,3 +34,7 @@ netlify dev
 # Directly open Netlify Admin for this application
 netlify open
 ```
+
+## Serverless functions made simple - Just add files
+
+[Blog Post](https://www.netlify.com/blog/2021/12/11/serverless-functions-made-simple-just-add-files/)
