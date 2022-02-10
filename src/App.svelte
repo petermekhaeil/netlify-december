@@ -1,65 +1,49 @@
-<script>
-  import logo from './assets/svelte.png'
-  import Counter from './lib/Counter.svelte'
-</script>
-
 <main>
-  <img src={logo} alt="Svelte Logo" />
-  <h1>Hello world!</h1>
-
-  <Counter />
-
-  <p>
-    Visit <a href="https://svelte.dev">svelte.dev</a> to learn how to build Svelte
-    apps.
-  </p>
-
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme">SvelteKit</a> for
-    the officially supported framework, also powered by Vite!
-  </p>
+  <h1>Welcome to Netlify!</h1>
 </main>
 
 <style>
   :root {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --primary-text-color: #c6c9ca;
+    --secondary-text-color: #ffffff;
+    --primary-page-color: #09171d;
+    --accent-color: #5cebdf;
+    --accent-color-alternate: #ff6b60;
+  }
+
+  :global(html),
+  :global(body) {
+    margin: 0;
+    padding: 0;
+  }
+
+  :global(body) {
+    text-align: center;
+    color: var(--primary-text-color);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+      Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    line-height: 28px;
+    font-size: 14px;
+    background-color: var(--primary-page-color);
+    padding: 2rem;
+    padding-bottom: 6rem;
+    border-top: 5px solid var(--accent-color);
+    @include bp(mid) {
+    }
+    @include bp(wide) {
+      font-size: 18px;
+    }
   }
 
   main {
-    text-align: center;
-    padding: 1em;
+    max-width: 90%;
     margin: 0 auto;
   }
 
-  img {
-    height: 16rem;
-    width: 16rem;
-  }
-
   h1 {
-    color: #ff3e00;
-    text-transform: uppercase;
-    font-size: 4rem;
-    font-weight: 100;
-    line-height: 1.1;
-    margin: 2rem auto;
-    max-width: 14rem;
-  }
-
-  p {
-    max-width: 14rem;
-    margin: 1rem auto;
-    line-height: 1.35;
-  }
-
-  @media (min-width: 480px) {
-    h1 {
-      max-width: none;
-    }
-
-    p {
-      max-width: none;
-    }
+    line-height: 1.4;
+    margin-top: 1.5em;
+    color: var(--secondary-text-color);
   }
 </style>
