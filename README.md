@@ -40,3 +40,31 @@ netlify open
 ## Serverless functions made simple - Just add files
 
 [Blog Post](https://www.netlify.com/blog/2021/12/11/serverless-functions-made-simple-just-add-files/)
+
+Serveless function: [pokemon](https://github.com/petermekhaeil/netlify-december/blob/master/netlify/functions/pokemon.js)
+
+## How to test serverless functions locally
+
+[Blog Post](https://www.netlify.com/blog/2021/12/12/how-to-test-serverless-functions-locally/)
+
+Netlify Dev will detect serverless functions and serve them locally:
+
+```
+ntl dev
+```
+
+Local URL: [http://localhost:8888/.netlify/functions/pokemon](http://localhost:8888/.netlify/functions/pokemon)
+
+## Setting up redirects on Netlify
+
+Redirections are stored in a file named `_redirects`:
+
+Example redirection:
+
+```
+/api/* /.netlify/functions/:splat 200
+```
+
+The above will redirect any paths starting with `/api/` to `/.netlify/functions/`.
+
+Example: [https://netlify-december.netlify.app/api/pokemon](https://netlify-december.netlify.app/api/pokemon)
