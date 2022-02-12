@@ -4,6 +4,13 @@ Showcase the features of [Netlify](https://www.netlify.com/) that were [highligh
 
 Demo: [https://netlify-december.netlify.app](https://netlify-december.netlify.app)
 
+- [Publish your site assets with the Netlify CLI](#publish-your-site-assets-with-the-netlify-cli)
+- [Supercharge your local development with Netlify Dev](#supercharge-your-local-development-with-netlify-dev)
+- [Using "netlify open" to jump directly to your project's admin page](#using-netlify-open-to-jump-directly-to-your-projects-admin-page)
+- [Serverless functions made simple - Just add files](#serverless-functions-made-simple---just-add-files)
+- [How to test serverless functions locally](#how-to-test-serverless-functions-locally)
+- [Setting up redirects on Netlify](#setting-up-redirects-on-netlify)
+
 ## Publish your site assets with the Netlify CLI
 
 [Blog Post](https://www.netlify.com/blog/2021/12/01/publish-your-site-assets-with-the-netlify-cli/)
