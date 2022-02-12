@@ -4,16 +4,17 @@ Showcase the features of [Netlify](https://www.netlify.com/) that were [highligh
 
 Demo: [https://netlify-december.netlify.app](https://netlify-december.netlify.app)
 
+## Features
+
 - [Publish your site assets with the Netlify CLI](#publish-your-site-assets-with-the-netlify-cli)
 - [Supercharge your local development with Netlify Dev](#supercharge-your-local-development-with-netlify-dev)
 - [Using "netlify open" to jump directly to your project's admin page](#using-netlify-open-to-jump-directly-to-your-projects-admin-page)
 - [Serverless functions made simple - Just add files](#serverless-functions-made-simple---just-add-files)
 - [How to test serverless functions locally](#how-to-test-serverless-functions-locally)
 - [Setting up redirects on Netlify](#setting-up-redirects-on-netlify)
+- [Accepting form submissions without a server](#accepting-form-submissions-without-a-server)
 
 ## Publish your site assets with the Netlify CLI
-
-[Blog Post](https://www.netlify.com/blog/2021/12/01/publish-your-site-assets-with-the-netlify-cli/)
 
 ```bash
 # Install the Netlify CLI
@@ -28,16 +29,12 @@ netlify deploy --prod
 
 ## Supercharge your local development with Netlify Dev
 
-[Blog Post](https://www.netlify.com/blog/2021/12/02/supercharge-your-local-development-with-netlify-dev/)
-
 ```bash
 # Run a local development of the site
 netlify dev
 ```
 
 ## Using "netlify open" to jump directly to your project's admin page
-
-[Blog Post](https://www.netlify.com/blog/2021/12/06/using-netlify-open-to-jump-directly-to-your-projects-admin-page/)
 
 ```bash
 # Directly open Netlify Admin for this application
@@ -46,13 +43,9 @@ netlify open
 
 ## Serverless functions made simple - Just add files
 
-[Blog Post](https://www.netlify.com/blog/2021/12/11/serverless-functions-made-simple-just-add-files/)
-
 Serveless function: [pokemon](https://github.com/petermekhaeil/netlify-december/blob/master/netlify/functions/pokemon.js)
 
 ## How to test serverless functions locally
-
-[Blog Post](https://www.netlify.com/blog/2021/12/12/how-to-test-serverless-functions-locally/)
 
 Netlify Dev will detect serverless functions and serve them locally:
 
@@ -75,3 +68,16 @@ Example redirection:
 The above will redirect any paths starting with `/api/` to `/.netlify/functions/`.
 
 Example: [https://netlify-december.netlify.app/api/pokemon](https://netlify-december.netlify.app/api/pokemon)
+
+## Accepting form submissions without a server
+
+Netlify will parse your HTMLs during deployment and look for `<form>` elements with the `data-netlify="true"` attributes:
+
+```html
+<form name="jokes" data-netlify="true">
+  <input type="text" name="joke" />
+  <button type="submit">Share</button>
+</form>
+```
+
+The submissions of these forms be saved in the Netlify Admin.

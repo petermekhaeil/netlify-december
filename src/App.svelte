@@ -1,6 +1,12 @@
 <main>
   <h1>Welcome to Netlify!</h1>
   <img src="/.netlify/functions/pokemon" alt="Pokemon" />
+  <form method="POST" name="jokes">
+    <input type="hidden" name="form-name" value="jokes" />
+    <label for="joke">Share a funny joke: </label>
+    <input type="text" name="joke" />
+    <button type="submit">Share</button>
+  </form>
 </main>
 
 <style>
