@@ -1,5 +1,8 @@
 <main>
-  <h1>Welcome to Netlify!</h1>
+  <header>
+    <h1>Welcome to Netlify!</h1>
+    <img alt="Pokeball" class="pokeball" src="/pokeball.svg" />
+  </header>
   <img src="/.netlify/functions/pokemon" alt="Pokemon" />
   <form method="POST" name="jokes">
     <input type="hidden" name="form-name" value="jokes" />
@@ -57,5 +60,10 @@
   img {
     width: 100%;
     max-width: fit-content;
+  }
+
+  .pokeball {
+    height: 100px;
+    width: 100px;
   }
 </style>
