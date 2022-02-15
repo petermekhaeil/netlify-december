@@ -13,6 +13,7 @@ Demo: [https://netlify-december.netlify.app](https://netlify-december.netlify.ap
 - [How to test serverless functions locally](#how-to-test-serverless-functions-locally)
 - [Setting up redirects on Netlify](#setting-up-redirects-on-netlify)
 - [Accepting form submissions without a server](#accepting-form-submissions-without-a-server)
+- [How to add features to your site via snippet injection](#how-to-add-features-to-your-site-via-snippet-injection)
 
 ## Publish your site assets with the Netlify CLI
 
@@ -81,3 +82,26 @@ Netlify will parse your HTMLs during deployment and look for `<form>` elements w
 ```
 
 The submissions of these forms be saved in the Netlify Admin.
+
+## How to add features to your site via snippet injection
+
+The following code is injected through the Netlify Admin UI. It spins the Pokeball on mouse clicks.
+
+```html
+<script>
+  const pokeball = document.querySelector('.pokeball');
+  let rotation = 0;
+
+  function rotateImg() {
+    rotation += 90;
+    if (rotation === 360) {
+      rotation = 0;
+    }
+
+    pokeball.style.transform = `rotate(${rotation}deg)`;
+  }
+
+  pokeball.style.cursor = `pointer`;
+  pokeball.addEventListener('click', rotateImg);
+</script>
+```
